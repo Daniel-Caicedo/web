@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="utf-8">
+<body>
+<center><h2>alumnos</h2></center>
+
+<form action="/action_page.php">
+  <script language ="Javascript" type="text/Javascript">
+  alert("bienvenido a la pagina de la U")
+  </script>
+  <script>
+ <script>
+function _calculateAge(fecha) { // cumpleaños es date
+    var ageDifMs = Date.now() - fecha.getTime();
+    var ageDate = new Date(ageDifMs); 
+	
+	
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+	
+	if (ageDate<=17){ 
+    document.getElementById("Button2").disabled = true;
+}else{
+
+if(ageDate>=17){
+    document.getElementById("Button2").disabled = false;
+	
+}
+}
+
+</script>
+ 
+ <script>
+  function clickAlert() {
+  
+  var numero=  document.getElementById('numero');
+  var nombre=  document.getElementById('nombre');
+  var apellido1=  document.getElementById('apellido1');
+  var apellido2=  document.getElementById('apellido2');
+  var fecha=  document.getElementById('ageDate');
+  var direccion=  document.getElementById('direccion');
+  var telefono=  document.getElementById('telefono');
+ 
+    alert("bienvenido señor@:"+ numero+nombre+apellido1+apellido2+ageDate+direccion+telefono);
+	
+	
+	
+}
+</script>
+  
+  <center>
+  <label for="text">Numero de Estudiante:</label>
+  <input type="text" name="numero" value="">
+  </center>
+  <br><br>
+  <center>
+ <label for="text">Nombre:</label>
+  <input type="text" name="nombre" value="">
+  </center>
+  <br></br>
+  <center>
+  <label for="text">Apellido Paterno:</label>
+  <input type="text" name="apellido1" value="">
+  </center>
+  <br></br>
+  <center>
+  <label for="text">Apellido materno:</label>
+  <input type="text" name="apellido2" value="">
+  </center>
+  <br></br>
+  
+  <div>
+  <center>
+        <label for="start">fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="date"
+               value=""
+               min="1900-01-01" max="2220-12-31" />
+			   </center>
+    </div>
+	<br></br>
+	<center>
+  <label for="text">Direccion:</label>
+  
+  
+  
+  <input type="text" name="direccion" value="">
+ 
+  </center>
+  <br></br>
+  <center>
+  <label for="text">Telefono:</label>
+  <input type="text" name="telefono" value="">
+  </center>
+  <br></br>
+  <center>
+  <label for="select">Sexo:</label>
+  <select>
+  <option value="F">Masculino</option>
+  <option value="M">Femenino</option>
+  <option value="O">Otro</option>
+  </select>
+  <label for="select">Año:</label>
+  <select>
+  <option value="F">primero</option>
+  <option value="M">segundo</option>
+  <option value="O">tercero</option>
+  </select>
+  
+   <label for="select">Turno:</label>
+  <select>
+  <option value="F">Diurno</option>
+  <option value="M">Nocturno</option>
+  </select>
+  </center>
+ 
+ <button type="button" id="Button1">regresar</button>
+ 
+ <div align="right">
+  <button type="button" id="Button2" onclick="clickAlert()" >guardar</button>
+</div>
+ 
+</form> 
+
+
+
+</body>
